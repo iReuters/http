@@ -1,0 +1,25 @@
+准备工作：
+    1.用户信息表
+
+    create table users(
+    userid int primary key auto_increment,
+    username varchar(50),
+    password varchar(50),
+    sex char(1),
+    email varchar(50)
+    )
+    auto_increment 自增序列 i++
+
+    insert into user(username,password,sex,email)
+    values('mike','123','男','mike@163.com')
+
+    insert into user(username,password,sex,email)
+    values('smith','456','男','smith@163.com')
+
+    在插入时，不给定具体标号，会自增
+
+    2. 创建实体类
+
+    3. 在src下创建工具类
+
+    4. 在web下WEB-INF下创建lib文件夹，存放mysql提供jdbc实现
